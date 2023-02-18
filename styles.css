@@ -1,0 +1,70 @@
+@font-face {
+  font-family: myFont;
+  src: url(Roboto-Black.ttf);
+}
+
+form {
+  display: flex;
+  font-family: myFont;
+  width: 1125px;
+  height: 1000px;
+}
+label {
+  display: block;
+}
+.images .image {
+  width: 30rem;
+  height: 900px;
+}
+.images .logo {
+  position: absolute;
+  bottom: 500px;
+  left: 150px;
+  width: 150px;
+  background-color: white;
+}
+.intro {
+  width: 100%;
+  padding: 100px;
+  background-color: rgb(68, 63, 63);
+  font-size: large;
+  font-weight: 600;
+  color: aliceblue;
+}
+.textfields-section {
+  padding: 50px;
+}
+.submit {
+  width: 100%;
+  padding: 100px;
+  background-color: rgb(212, 206, 206);
+}
+.textfields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 8px;
+}
+.textfields input:invalid {
+  border-color: red;
+}
+.textfields input:required:valid {
+  border-color: rgb(4, 211, 4);
+}
+.submit button {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+.submit div {
+  margin-top: 10px;
+}
+#message {
+  font-weight: 600;
+}
